@@ -8,4 +8,5 @@ app.use(express.static(__dirname + '/node_modules'));
 
 app.listen(port, () => {
     console.log(`Application running on port: ${port}`)
+    console.log(`Navigate to localhost:${port}`)
 });
