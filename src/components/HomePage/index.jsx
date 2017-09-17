@@ -157,7 +157,7 @@ class HomePage extends Component {
               (this.props.open ?
                 (this.state.book.psnap.asks && `Price: ${this.state.book.psnap.asks[0]}`) :
                 "Loading") :
-            `Pricing Closed. Last Price: ${this.state.book.psnap.asks[0]}`)
+            `Pricing Closed. Last Ask Price: ${this.state.book.psnap.asks[0]}`)
           }
           <RaisedButton
             backgroundColor={'lightgrey'}
