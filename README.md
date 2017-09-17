@@ -6,7 +6,7 @@
 
 ### DevEnv
 
-This code is compiled with webpack, and needs a run of webpack before ``` npm start``` is ran.
+This code is compiled with webpack, and needs a run of webpack before ``` npm start``` is ran. For development, use ```npm run watch``` alongside ```npm start```.
 
 ### Comments
 
