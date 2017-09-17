@@ -3,11 +3,15 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './reducers';
 import HomePage from './components/HomePage';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
-const App = (props) => <div>
-  <Provider store={store}>
-    <HomePage />
-  </Provider>
-</div>;
+function App() {
+  return (<MuiThemeProvider>
+    <Provider store={store}>
+      <HomePage />
+    </Provider>
+  </MuiThemeProvider>);
+}
 
-render(React.createElement(<App />, document.getElementById('app')));
+render(React.createElement(App), document.getElementById('app'));

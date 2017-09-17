@@ -8,32 +8,35 @@ import {
 
 import _ from 'lodash';
 
-const initialState = () => {};
+const initialState = () => ({});
 
-export function WebsocketReducer(state=initialState(), action) {
+export default function (state=initialState(), action) {
   switch(action.type) {
     case WEBSOCKET_ON_OPEN: {
       state.open = true;
       state.pending = false;
-      break;
+      return Object.assign({}, state);
     }
     case WEBSOCKET_REQUEST_OPEN: {
       state.pending = true;
-      break;
+      return Object.assign({}, state);
     }
     case WEBSOCKET_ON_CLOSE: {
       state.pending = false; 
       state.open = false; 
-      break;
+      state.closed = true;
+      return Object.assign({}, state);
     }
     case WEBSOCKET_REQUEST_CLOSE: {
       state.pending = true; 
-      break;
+      return Object.assign({}, state);
     }
     case WEBSOCKET_ON_ERROR: {
       state.error = true;
-      break;
+      return Object.assign({}, state);
     }
   }
+
   return state;
+  
 }
