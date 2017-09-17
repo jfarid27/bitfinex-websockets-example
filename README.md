@@ -14,6 +14,6 @@ The main page is in the Homepage component, and some actions are added along wit
 about the websocket connection. The BookVisualization is a component that uses d3 to visualize the book information in
 a graph. The only numbers shown are the aggregate totals and the price level.
 
-With the time constraints, important features were focused on, but with more time I would have liked to improve the UI,
-as well as adding more development features. On my current project, our DevEnvironment includes the webpack-server, which
-would have been a nice addition, but would have been an over-optimization for this one-off widget. 
+Important features were focused on, but I would like to improve the UI, as well as adding
+more development features. A ```webpack-dev-server``` would probably be the best addition for fast
+turnaround with building the program, but for now, ```webpack --watch``` is used to develop.
