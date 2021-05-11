@@ -20,7 +20,7 @@
     "babel-preset-react": "^6.24.1",
     "d3": "^4.10.2",
     "express": "^4.15.4",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "material-ui": "^0.19.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
